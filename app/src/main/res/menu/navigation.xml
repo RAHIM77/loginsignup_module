@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_offer_ride"
+        android:icon="@drawable/ic_offer_ride"
+        android:title="Offer Ride" />
+    <item
+        android:id="@+id/navigation_search_ride"
+        android:icon="@drawable/ic_search_ride_24dp"
+        android:title="Search Ride" />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="History" />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Profile" />
+</menu>
