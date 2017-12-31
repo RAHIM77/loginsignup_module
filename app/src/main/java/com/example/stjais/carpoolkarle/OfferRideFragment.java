@@ -81,7 +81,7 @@ public class OfferRideFragment extends Fragment {
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
         } else {
-            Toast.makeText(context, "Offer Ride", Toast.LENGTH_SHORT).show();
+           // Toast.makeText(context, "Offer Ride", Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -81,7 +81,7 @@ public class HistoryFragment extends Fragment {
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
         } else {
-            Toast.makeText(context, "History ", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, "History ", Toast.LENGTH_SHORT).show();
         }
     }
 
