@@ -11,37 +11,40 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
 
-
+    FirebaseAuth mAuth;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            FragmentManager fragmentManager=getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             switch (item.getItemId()) {
                 case R.id.navigation_dashboard:
-                    fragmentTransaction.replace(R.id.content,new DashboardFragment()).commit();
+                    fragmentTransaction.replace(R.id.content, new DashboardFragment()).commit();
                     return true;
                 case R.id.navigation_offer_ride:
-                    fragmentTransaction.replace(R.id.content,new OfferRideFragment()).commit();
+                    fragmentTransaction.replace(R.id.content, new OfferRideFragment()).commit();
                     return true;
                 case R.id.navigation_search_ride:
-                    fragmentTransaction.replace(R.id.content,new SearchRideFragment()).commit();
+                    fragmentTransaction.replace(R.id.content, new SearchRideFragment()).commit();
                     return true;
                 case R.id.navigation_history:
-                    fragmentTransaction.replace(R.id.content,new HistoryFragment()).commit();
+                    fragmentTransaction.replace(R.id.content, new HistoryFragment()).commit();
                     return true;
                 case R.id.navigation_account:
-                    fragmentTransaction.replace(R.id.content,new AccountFragment()).commit();
+                    fragmentTransaction.replace(R.id.content, new AccountFragment()).commit();
                     return true;
             }
             return false;
         }
     };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,14 +53,13 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         navigation.getMenu().getItem(2).setChecked(true);
-        FragmentManager fragmentManager=getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.content,new DashboardFragment()).commit();
-
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.content, new DashboardFragment()).commit();
 
     }
-
-
 }
+
+
 
 

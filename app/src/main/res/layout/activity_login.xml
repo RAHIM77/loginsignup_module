@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/dem"
+    tools:context="com.example.stjais.carpoolkarle.LoginActivity">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textAlignment="center"
+       android:textSize="25dp"
+       android:textStyle="bold"
+       android:text="Login Here"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="#ecf0f1"
+        android:id="@+id/et_email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#ecf0f1"
+        android:id="@+id/et_password"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnlogin"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Dont have an account Click to Registor"
+        android:textAlignment="center"
+        android:textColor="#ecf0f1"
+        android:id="@+id/txt_reglink"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColor="#ecf0f1"
+        android:layout_height="wrap_content"
+        android:text="Forgot ? password Click to reset your password"
+        android:textAlignment="center"
+        android:id="@+id/txt_resetlink"/>
+</LinearLayout>
