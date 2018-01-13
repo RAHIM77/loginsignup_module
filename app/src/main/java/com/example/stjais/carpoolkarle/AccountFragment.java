@@ -74,8 +74,8 @@ public class AccountFragment extends Fragment {
     }
     private void logoutUser() {
         FirebaseAuth.getInstance().signOut();
-        Intent intent = new Intent(getActivity(), LoginActivity.class);
-        getActivity().startActivity(intent);
+        startActivity(new Intent(getActivity(), LoginActivity.class));
+        getActivity().finish();
     }
     @Override
     public void onStart() {

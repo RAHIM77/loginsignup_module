@@ -22,7 +22,7 @@ public class WelcomeScreen extends AppCompatActivity {
                 super.run();
                 try {
 
-                            sleep(5000);
+                            sleep(1000);
                     Intent intent=new Intent(WelcomeScreen.this,GuideActivity.class);
                      startActivity(intent);
                     overridePendingTransition(R.anim.mytrans,R.anim.fi);
