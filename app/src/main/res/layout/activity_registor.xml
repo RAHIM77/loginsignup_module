@@ -1,57 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/dem"
+    android:orientation="vertical"
     tools:context="com.example.stjais.carpoolkarle.RegistorActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Register Here"
         android:textAlignment="center"
-        android:textSize="35dp"
-        android:textStyle="bold"
         android:textColor="#ecf0f1"
-        android:text="Register Here"/>
+        android:textSize="35dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/et_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="fullname"
+        android:textColorHint="#ecf0f1" />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_marginTop="50dp"
-        android:layout_height="wrap_content"
-        android:hint="fullname"
-        android:textColorHint="#ecf0f1"
-        android:id="@+id/et_fullname"/>
-    <EditText
+        android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="email"
-        android:textColorHint="#ecf0f1"
-        android:id="@+id/et_email"/>
+        android:textColorHint="#ecf0f1" />
+
     <EditText
+        android:id="@+id/et_age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Age"
-        android:textColorHint="#ecf0f1"
-        android:id="@+id/et_age"/>
+        android:textColorHint="#ecf0f1" />
 
     <EditText
+        android:id="@+id/et_cno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Contact no"
-        android:textColorHint="#ecf0f1"
-        android:id="@+id/et_cno"/>
+        android:textColorHint="#ecf0f1" />
 
     <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:textColorHint="#ecf0f1" />
+
+    <EditText
+        android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Set password"
-        android:textColorHint="#ecf0f1"
-        android:id="@+id/et_password"/>
+        android:inputType="textPassword"
+        android:textColorHint="#ecf0f1" />
+
     <Button
+        android:id="@+id/btnSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Signup"
-        android:id="@+id/btnSignup"/>
+        android:text="Signup" />
+
+
 </LinearLayout>
+</ScrollView>

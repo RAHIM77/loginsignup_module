@@ -38,4 +38,10 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <!-- validation errors prompt login -->
+    <string name="nameerror">Enter a valid name</string>
+    <string name="emailerror">Enter a valid email</string>
+    <string name="mobileerror">Enter a valid mobile no</string>
+    <string name="ageerror">Enter a valid age</string>
+
 </resources>
