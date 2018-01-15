@@ -43,5 +43,6 @@
     <string name="emailerror">Enter a valid email</string>
     <string name="mobileerror">Enter a valid mobile no</string>
     <string name="ageerror">Enter a valid age</string>
+    <string name="err_msg_name"> enter your Full Name</string>
 
 </resources>

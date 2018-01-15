@@ -32,7 +32,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:11.6.2'
     compile 'com.google.firebase:firebase-auth:11.6.2'
     compile 'com.google.android.gms:play-services-auth:11.6.2'
-    compile 'com.basgeekball:awesome-validation:2.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'

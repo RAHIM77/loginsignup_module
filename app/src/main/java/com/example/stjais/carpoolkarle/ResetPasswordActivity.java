@@ -1,6 +1,7 @@
 package com.example.stjais.carpoolkarle;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -65,7 +66,8 @@ public class ResetPasswordActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                startActivity(new Intent(ResetPasswordActivity.this,LoginActivity.class));
+
             }
         });
     }

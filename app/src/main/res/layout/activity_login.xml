@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="@drawable/dem"
@@ -13,6 +14,13 @@
        android:textSize="25dp"
        android:textStyle="bold"
        android:text="Login Here"/>
+ <android.support.design.widget.TextInputLayout
+     android:id="@+id/input_email"
+     app:errorEnabled="true"
+     android:textColorHint="#ecf0f1"
+     app:errorTextAppearance="@style/WelcomeErrorAppearance"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
     <EditText
         android:layout_width="match_parent"
         android:layout_marginTop="60dp"
@@ -20,6 +28,15 @@
         android:hint="Email"
         android:textColorHint="#ecf0f1"
         android:id="@+id/et_email"/>
+ </android.support.design.widget.TextInputLayout>
+
+ <android.support.design.widget.TextInputLayout
+     android:id="@+id/input_password"
+     app:errorEnabled="true"
+     android:textColorHint="#ecf0f1"
+     app:errorTextAppearance="@style/WelcomeErrorAppearance"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,11 +44,13 @@
         android:inputType="textPassword"
         android:textColorHint="#ecf0f1"
         android:id="@+id/et_password"/>
+ </android.support.design.widget.TextInputLayout>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
         android:id="@+id/btnlogin"/>
+
      <com.google.android.gms.common.SignInButton
       android:id="@+id/sign_in_button"
      android:layout_width="200dp"
