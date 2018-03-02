@@ -25,15 +25,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-            android:theme="@style/Base.Theme.AppCompat" /> <!-- optional (needed if default theme has no action bar) -->
-        <activity
             android:name=".GuideActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegistorActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".PhoneNoAuth"></activity>
     </application>
 
 </manifest>

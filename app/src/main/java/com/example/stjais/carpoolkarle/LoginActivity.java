@@ -2,10 +2,10 @@ package com.example.stjais.carpoolkarle;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -35,7 +36,7 @@ import com.google.firebase.auth.GoogleAuthProvider;
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG ="dfnjn" ;
     private static final int RC_SIGN_IN =12;
-    TextView gotoregistor,resetlink;
+    TextView gotoregistor,resetlink,phone;
     EditText email,password;
     Button loginbtn;
     FirebaseAuth mAuth;
@@ -102,7 +103,13 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
         resetlink=(TextView)findViewById(R.id.txt_resetlink);
-
+        phone=(TextView) findViewById(R.id.txt_phone);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this,PhoneNoAuth.class));
+            }
+        });
 
         resetlink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,6 +119,7 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         });
+
     }
     @Override
     public void onStart() {

@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/dem"
+    android:background="@drawable/registorbackground"
     tools:context="com.example.stjais.carpoolkarle.LoginActivity">
    <TextView
        android:layout_width="match_parent"
@@ -17,7 +17,7 @@
  <android.support.design.widget.TextInputLayout
      android:id="@+id/input_email"
      app:errorEnabled="true"
-     android:textColorHint="#ecf0f1"
+     android:textColorHint="@color/hintcolor"
      app:errorTextAppearance="@style/WelcomeErrorAppearance"
      android:layout_width="match_parent"
      android:layout_height="wrap_content">
@@ -42,13 +42,14 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColorHint="#ecf0f1"
+        android:textColorHint="@color/hintcolor"
         android:id="@+id/et_password"/>
  </android.support.design.widget.TextInputLayout>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
+        android:background="@drawable/roundedbutton"
         android:id="@+id/btnlogin"/>
 
      <com.google.android.gms.common.SignInButton
@@ -56,7 +57,17 @@
      android:layout_width="200dp"
          android:layout_marginTop="10dp"
          android:layout_gravity="center"
-     android:layout_height="wrap_content"/>
+     android:layout_height="wrap_content"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColor="#ecf0f1"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:text="Authenticate using your phone number directly"
+        android:textAlignment="center"
+        android:id="@+id/txt_phone"/>
 
     <TextView
         android:layout_width="match_parent"

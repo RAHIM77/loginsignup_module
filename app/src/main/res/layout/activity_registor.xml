@@ -8,7 +8,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dem"
+    android:background="@drawable/registorbackground"
     android:orientation="vertical"
     tools:context="com.example.stjais.carpoolkarle.RegistorActivity">
 
@@ -114,6 +114,8 @@
 
     <Button
         android:id="@+id/btnSignup"
+        android:textColor="#ffff"
+        android:background="@drawable/roundedbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Signup" />
